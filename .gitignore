@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+wakeword-env/
+heyroom-env/
+openvoice-env/
+
+# IDE and editor folders
+.vscode/
+.idea/
+
+# Logs, checkpoints, and temp files
+*.log
+*.tmp
+*.bak
+logs/
+.ipynb_checkpoints
+
+# macOS metadata
+.DS_Store
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+
+# Audio data and model files
+*.wav
+*.mp3
+*.flac
+*.pt
+*.pth
+*.onnx
+*.tflite
+
+# Auto-generated or processed data
+outputs/
+processed/
+reference_voices/
+samples_xtts/
+samples_yourtts/
+samples_openvoice/
+data/training_data/
+data/test_data/
+data/validation_data/
+assets/background/
+assets/source/
+my_custom_model/
+checkpoints/
+checkpoints_v2/
+models/
+
+# Colab-specific
+*.ipynb
+
+# Environment and secrets
+.envrc
+
+

@@ -1,0 +1,102 @@
+# Target wakeword phrase
+target_phrase:
+  - "hey room"
+
+# Model name (used for output)
+model_name: hey_room
+
+# Number of training samples to generate
+n_samples: 30000
+n_samples_val: 3000
+
+# Training parameters
+steps: 20000
+target_accuracy: 0.5
+target_recall: 0.25
+max_negative_weight: 0.5
+
+# Output directory for trained model files
+output_dir: my_custom_model/hey_room
+
+# Input datasets
+positive_data_path: data/training_data/finalheyroom
+negative_data_path: data/training_data/finalnotwakeword
+
+# Optional: add background noise datasets
+background_paths:
+  - assets/background
+
+# Evaluation data (can be omitted or replaced with your own)
+false_positive_validation_data_path: validation_set_features.npy
+
+# Feature cache
+feature_data_files:
+  ACAV100M_sample: openwakeword_features_ACAV100M_2000_hrs_16bit.npy
+# Target wakeword phrase
+target_phrase:
+  - "hi room"
+
+# Model name (used for output)
+model_name: hi_room
+
+# Number of training samples to generate
+n_samples: 30000
+n_samples_val: 3000
+
+# Training parameters
+steps: 20000
+target_accuracy: 0.5
+target_recall: 0.25
+max_negative_weight: 0.5
+
+# Output directory for trained model files
+output_dir: my_custom_model/hi_room
+
+# Input datasets
+positive_data_path: data/training_data/finalhiroom
+negative_data_path: data/training_data/finalnotwakeword
+
+# Optional: add background noise datasets
+background_paths:
+  - assets/background
+
+# Evaluation data (can be omitted or replaced with your own)
+false_positive_validation_data_path: validation_set_features.npy
+
+# Feature cache
+feature_data_files:
+  ACAV100M_sample: openwakeword_features_ACAV100M_2000_hrs_16bit.npy
+# Target wakeword phrase
+target_phrase:
+  - "wake up room"
+
+# Model name (used for output)
+model_name: wake_up_room
+
+# Number of training samples to generate
+n_samples: 30000
+n_samples_val: 3000
+
+# Training parameters
+steps: 20000
+target_accuracy: 0.5
+target_recall: 0.25
+max_negative_weight: 0.5
+
+# Output directory for trained model files
+output_dir: my_custom_model/wake_up_room
+
+# Input datasets
+positive_data_path: data/training_data/finalwakeupRoom
+negative_data_path: data/training_data/finalnotwakeword
+
+# Optional: add background noise datasets
+background_paths:
+  - assets/background
+
+# Evaluation data (can be omitted or replaced with your own)
+false_positive_validation_data_path: validation_set_features.npy
+
+# Feature cache
+feature_data_files:
+  ACAV100M_sample: openwakeword_features_ACAV100M_2000_hrs_16bit.npy
